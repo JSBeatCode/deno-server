@@ -29,3 +29,12 @@
 7. 코딩
 
 8. deno run dev
+
+9. git
+echo "# deno-server" >> README.md
+git init
+git add .
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/JSBeatCode/deno-server.git
+git push -u origin main
