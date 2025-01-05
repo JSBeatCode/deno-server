@@ -1,0 +1,31 @@
+1. deno install
+    - window11 deno install 인 경우 
+        - choco 설치
+            > Set-ExecutionPolicy Bypass -Scope Process -Force
+            > [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; 
+              Set-ExecutionPolicy Bypass -Scope Process -Force; 
+              iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
+        - deno 설치
+            choco install deno
+
+
+    - deno zip release 로 실행할 경우 release zip 다운로드 후 압축 해제 후 exe 실행
+
+2. checkout file directory
+    > deno run https://deno.land/std/http/file_server.ts
+
+3. deno install in local base
+    > deno install -g https://deno.land/std/http/file_server.ts
+    > window path setting:
+        C:\Users\jsd\.deno\bin\[installed deno modules]
+
+4. deno init 
+
+5. deno.json 코딩
+
+6. postgreSQL 설계
+    > products.sql
+
+7. 코딩
+
+8. deno run dev

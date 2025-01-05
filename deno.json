@@ -1,0 +1,15 @@
+{
+  "dotenv": true,
+  "tasks": {
+    "dev": "deno run --watch --allow-all server.ts"
+  },
+  "imports": {
+    "@std/assert": "jsr:@std/assert@1",
+    "dotenv": "jsr:@std/dotenv/load",
+    "server": "https://deno.land/std@0.203.0/http/server.ts",
+    "postgres": "https://deno.land/x/postgres@v0.17.0/mod.ts"
+  },
+  "logger": {
+    "debug": true
+  }
+}
