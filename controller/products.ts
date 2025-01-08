@@ -1,6 +1,8 @@
 import { Client } from "postgres";
-import { dbCreds } from "../config.ts";
-import { Product } from "../types.ts";
+// import { dbCreds } from "../config/index.ts";
+import { dbCreds } from "@/config";
+// import { Products } from "../types/productsType.ts";
+import { Products } from "@/types/products";
 
 const client = new Client(dbCreds)
 
@@ -65,7 +67,7 @@ const getProduct = async (params: any): Promise<Response> => {
 const addProduct = async (req: any): Promise<Response> => {
     const result: any = new Object();
     try {
-        const product: Product = await req.json()
+        const product: Products = await req.json()
         // const product = body.value
         
         if (product !== null && product !== undefined && typeof product === 'object' && Object.keys(product).length > 0) {

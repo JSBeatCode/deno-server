@@ -7,7 +7,9 @@
     "@std/assert": "jsr:@std/assert@1",
     "dotenv": "jsr:@std/dotenv/load",
     "server": "https://deno.land/std@0.203.0/http/server.ts",
-    "postgres": "https://deno.land/x/postgres@v0.17.0/mod.ts"
+    "postgres": "https://deno.land/x/postgres@v0.17.0/mod.ts",
+    "@/config": "./config/index.ts",
+    "@/types/products": "./types/productsType.ts"
   },
   "logger": {
     "debug": true
