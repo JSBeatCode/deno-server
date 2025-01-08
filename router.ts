@@ -44,19 +44,22 @@ const staticRoutes: Record<string, (req: Request) => Promise<Response> | Respons
 const dyanmicRoutes = [
     {
         name: 'getProduct',
-        url: /^\/product\/(\d+)$/,
+        // url: /^\/product\/(\d+)$/,
+        url: /^\/product\/([\w-]+)$/,
         method: "GET",
         func: getProduct
     },
     {
         name: 'updateProduct',
-        url: /^\/product\/(\d+)$/,
+        // url: /^\/product\/(\d+)$/,
+        url: /^\/product\/([\w-]+)$/,
         method: "PUT",
         func: updateProduct
     },
     {
         name: 'deleteProduct',
-        url: /^\/product\/(\d+)$/,
+        // url: /^\/product\/(\d+)$/,
+        url: /^\/product\/([\w-]+)$/,
         method: "DELETE",
         func: deleteProduct
     }

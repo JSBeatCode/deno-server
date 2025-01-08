@@ -18,7 +18,7 @@ function matchDynamicRoute(method: String, pathname: String, req: Request): any 
   for (let i = 0; i < dyanmicRoutes.length; i++) {
     const o = dyanmicRoutes[i]
     params.url = pathname.match(o.url)
-      if (params && method === o.method) {
+      if (params.url && method === o.method) {
         dynamicHandler = o.func
         break;
       }
