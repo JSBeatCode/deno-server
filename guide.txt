@@ -27,7 +27,12 @@
     > products.sql
 
 7. 코딩
-
+    > 제외:
+        main_test.ts
+        main.ts
+        deno.json_desc.txt
+        deno.lock
+        guide.txt
 8. deno run dev
 
 9. git
